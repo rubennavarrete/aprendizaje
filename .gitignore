@@ -1,0 +1,16 @@
+# .gitignore
+
+# Ignora la carpeta del entorno virtual
+env
+
+# Ignora todos los archivos .pyc que son generados por Python
+*.pyc
+
+# Ignora la carpeta __pycache__ que es generada por Python
+__pycache__/
+
+# Ignora los archivos de log
+*.log
+
+# Ignora los archivos de base de datos SQLite si los estás utilizando
+*.sqlite

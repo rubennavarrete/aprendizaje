@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Preguntas</title>
+  </head>
+  <body>
+    <h1>{{ pregunta.enunciado }}</h1>
+    <form method="POST">
+      {% for i, opcion in enumerate(pregunta.opciones, 1) %}
+      <input type="radio" id="opcion{{ i }}" name="respuesta" value="{{ i }}" />
+      <label for="opcion{{ i }}">{{ opcion }}</label><br />
+      {% endfor %}
+      <input type="submit" value="Enviar respuesta" />
+    </form>
+  </body>
+</html>
