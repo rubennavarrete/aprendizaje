@@ -1,3 +1,4 @@
+import os
 from flask import Flask, render_template, request, session
 import random
 
@@ -66,5 +67,5 @@ def index():
 
     return render_template('index.html', pregunta=pregunta, enumerate=enumerate)
 
-if __name__ == "__main__":
-    app.run(debug=True)
+if __name__ == '__main__':
+    app.run(debug=True, port=os.getenv("PORT", default=5000))
